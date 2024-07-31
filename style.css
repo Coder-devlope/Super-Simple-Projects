@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Global styles */
+body {
+  /* Center the content vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  /* Set background color and image */
+  background-color: #e1d5d5;
+  background: url("/Saved\ Pictures/pexels-therato-1933239.jpg");
+  background-position: fixed;
+  background-attachment: fixed;
+  /* Set font family */
+  font-family: monospace;
+}
+
+/* Weather form styles */
+.weatherForm {
+  /* Add margin and padding */
+  margin: 36px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-left: 89px;
+}
+
+.weatherForm input {
+  /* Style the input field */
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 155%;
+  height: 56px;
+  margin-left: 98px;
+  /* Add border and padding */
+  border: 2px solid rgb(255, 255, 255, 0.5);
+  border-radius: 15px;
+  text-transform: uppercase;
+  padding: 0 35px 0 44px;
+  color: #f3ecec;
+  font-size: 30px;
+  font-weight: 560;
+  width: 64%;
+  height: 10%;
+  background: transparent;
+  outline: none;
+}
+
+.weatherForm input::placeholder {
+  /* Style the placeholder text */
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.weatherForm button[type="submit"] {
+  /* Style the submit button */
+  position: absolute;
+  height: 11%;
+  width: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: 76%;
+  font-size: 27px;
+  color: #fff;
+  padding: 0 40px 0 5px;
+  cursor: pointer;
+}
+
+.weatherForm button[type="submit"]:active {
+  /* Style the active state of the submit button */
+  background: linear-gradient(#fffdfd);
+  font-size: 26px;
+  font-weight: 790;
+}
+
+/* Card styles */
+.card {
+  /* Position the card absolutely */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+  font-size: 18px;
+  font-weight: 550;
+  border: 1px solid #000;
+  padding: 10px 30px;
+  border-radius: 15px;
+  height: 486px;
+  border: none;
+  width: 699px;
+  box-shadow: 8px 15px 122px 22px rgba(25, 25, 178, 0.82);
+  -webkit-box-shadow: 8px 15px 122px 22px rgba(69, 69, 171, 0.82);
+  -moz-box-shadow: 8px 15px 122px 22px rgba(20, 20, 167, 0.82);
+}
+
+.weatherForm i {
+  /* Style the location icon */
+  position: absolute;
+  top: 13px;
+  left: 109px;
+  font-size: 25px;
+  color: #eee;
+}
+
+/* Weather box styles */
+.weather-box img {
+  /* Style the weather icon */
+  position: absolute;
+  width: 129px;
+  bottom: 45%;
+  left: 67%;
+}
+
+.weather {
+  /* Style the weather text */
+  margin-top: -55%;
+  font-size: 1.9em;
+  font-weight: 780;
+  color: #fff;
+  font-family: Roboto;
+}
+
+.weather span {
+  /* Style the weather text shadow */
+  text-shadow: 3px 3px 5px rgb(227, 214, 214), -3px -3px 5px blue;
+}
+
+.weather span:hover {
+  /* Style the weather text shadow on hover */
+  text-shadow: 3px 3px 5px rgba(10, 239, 6, 0.722), -3px -3px 5px rgb(21, 247, 236);
+}
+
+/* Weather paragraph styles */
+.weather p {
+  /* Add text shadow */
+  text-shadow: 3px 3px 5px rgb(227, 214, 214), -3px -3px 5px blue;
+}
+
+/* Weather paragraph hover styles */
+.weather p:hover {
+  /* Change text shadow on hover */
+  text-shadow: 3px 3px 5px rgba(10, 239, 6, 0.722), -3px -3px 5px rgb(21, 247, 236);
+}
+
+/* Weather footer styles */
+.weather-Footer {
+  /* Position the footer absolutely */
+  position: absolute; 
+  bottom: -15%;
+  right: -50%;
+  transform: translate(-50%, -50%);
+  /* Add border and padding */
+  border: 1px solid #000;
+  padding: 10px 30px;
+  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  /* Set background color and transparency */
+  background: rgba(255, 255, 255, 0.2);
+  border: transparent;
+  /* Set height and width */
+  height: 163px;
+  width: 699px;
+}
+
+/* Weather detail styles */
+.weather-detail {
+  /* Display as flexbox */
+  display: flex;
+  /* Position absolutely */
+  position: absolute;
+  top: 40px;
+  /* Set text color and alignment */
+  color: #fff;
+  text-align: center;
+  gap: 15px;
+  word-spacing: -6px;
+}
+
+/* Weather detail icon styles */
+.weather-detail i {
+  /* Set font size and position */
+  font-size: 30px;
+  position: absolute;
+}
+
+/* Weather detail span styles */
+.weather-detail span {
+  /* Set position and top margin */
+  position: absolute;
+  top: 45px;
+}
+
+/* Weather detail humidity span styles */
+.weather-detail.humidity span {
+  position: absolute;
+  left: 10px;
+}
+
+/* Wind styles */
+.wind {
+  /* Display as flexbox */
+  display: flex;
+  /* Position absolutely */
+  position: absolute;
+  left: 650px;
+}
+
+/* Humidity styles */
+.humidity {
+  display: flex;
+  position: absolute;
+  left: -20px;
+}
+
+/* Weather detail paragraph styles */
+.weather-detail p {
+  position: absolute;
+  /* Add box shadow */
+  box-shadow: 8px 15px 122px 22px rgba(25, 25, 178, 0.82);
+  -webkit-box-shadow: 8px 15px 122px 22px rgba(69, 69, 171, 0.82);
+  -moz-box-shadow: 8px 15px 122px 22px rgba(20, 20, 167, 0.82);
+  top: 75px;
+}
+
+/* Weather detail and temperatures paragraph styles */
+.weather-detail,.tempretures p {
+  display: flex;
+  position: absolute;
+  text-align: center;
+}
+
+/* H1 and H4 styles */
+h1, h4 {
+  /* Display as flexbox */
+  display: flex;
+  /* Set background gradient */
+  background: linear-gradient(137deg, #1700a1 0%, #ff0061 80%);
+  background: -webkit-linear-gradient(137deg, #1c03a8 0%, #ff0061 80%);
+  background: -moz-linear-gradient(137deg, #1700a1 0%, #ff0061 80%); 
+  /* Set background clip and text color */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: gilroy;
+  border-radius: 10px;
+  position: absolute;
+}
+
+/* H1 styles */
+h1 {
+  display: flex;
+  position: absolute;
+  font-size:2.1rem;
+  left: -119px;
+  top: -22px;
+}
+
+/* H4 styles */
+h4 {
+  font-family: monospace;
+  display: flex;
+  position: absolute;
+  top: 35px;
+  left: -105px;
+}
